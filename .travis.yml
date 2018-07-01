@@ -7,11 +7,8 @@ cache:
     - "server/node_modules"
     - "client/node_modules"
 install:
-  - npm install
   - npm install --prefix client
-  - npm install --prefix server
 script:
-  - npm run lint:fix
   - npm run build:client
 deploy:
   provider: pages
