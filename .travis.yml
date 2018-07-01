@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "8"
+cache:
+  directories:
+    - "node_modules"
+    - "server/node_modules"
+    - "client/node_modules"
+install:
+  - npm install
+  - npm install --prefix client
+  - npm install --prefix server
+script:
+  - npm run lint:fix
+  - npm run build:client
+deploy:
+  provider: pages
+  local-dir: docs
+  repo: venode/landing
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  target-branch: master
+  name: VeNode Travis Helper
+  email: team@venode.io
