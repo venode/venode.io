@@ -8,10 +8,10 @@
     "lint:fix": "eslint --fix .",
     "precommit": "lint-staged",
     "prepush": "npm run lint:fix",
-    "build:client": "npm run build --prefix client",
+    "build:client": "npm run build --prefix client && npm run create-cname",
     "build:server": "npm run build --prefix server",
-    "build": "npm run test && npm run build:server && npm run build:client && npm run create-cname",
-    "create-cname": "touch ../docs/CNAME && echo \"www.venode.io\" >> ../docs/CNAME "
+    "build": "npm run test && npm run build:server && npm run build:client",
+    "create-cname": "touch ./docs/CNAME && echo \"www.venode.io\" >> ./docs/CNAME"
   },
   "lint-staged": {
     "*.js": [
