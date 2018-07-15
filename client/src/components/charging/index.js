@@ -44,7 +44,7 @@ const Prompt = styled.div`
   margin: auto;
   @media (max-width: 800px) {
     font-size: 1.5rem;
-    bottom: 120px;
+    bottom: 80px;
   }
   }
 `;
@@ -63,8 +63,11 @@ const Container = styled.div`
   background-size: 900px;
   background-repeat:no-repeat;
   background-position: center 5vh;
+  @media (max-width: 800px) {
+    background-position: center 0px;
+  }
   img {
-    margin: 50px auto 20px;
+    margin: 20px auto;
     width: 50px;
   }
 `;
