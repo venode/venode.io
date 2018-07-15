@@ -3,11 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Charging = () => (<Container>
-  <video preload='true' autoPlay='autoplay' muted='true' loop>
-    <source src='../../assets/thor_charging.mov' />
-  </video>
-  <Dots/>
   <Prompt>
+    <Dots/>
     <p>Your Access to Thor Power.</p>
     <Link to='/intro'>
       <More>Learn More</More>
@@ -19,7 +16,6 @@ const Dots = styled.img.attrs({
   src: '../../assets/four_dots_circle.svg'
 })``;
 
-
 const More = styled.div`
   border: 1.5px solid rgba(255,255,255,0.2);
   padding: 5px 30px;
@@ -29,7 +25,7 @@ const More = styled.div`
   letter-spacing: 1px;
   user-select: none;
   color: rgba(255,255,255,0.8);
-
+  font-size: 1rem;
   :hover {
     border: 1.5px solid rgba(255,255,255,0.8);
     color: rgba(255,255,255,1);
@@ -39,13 +35,17 @@ const More = styled.div`
 const Prompt = styled.div`
   background: black;
   z-index: 10;
-
-  p{
-    letter-spacing: 1px;
-    font-size: 2rem;
-    @media (max-width: 800px) {
-      font-size: 1.5rem;
-    }
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+    bottom: 120px;
+  }
   }
 `;
 
@@ -57,33 +57,15 @@ const Container = styled.div`
   background: black;
   color: white;
   user-select: none;
-
+  padding: 0px;
+  overflow: hidden;
+  background-image: url('../../assets/thor_charging.gif');
+  background-size: 900px;
+  background-repeat:no-repeat;
+  background-position: center 5vh;
   img {
     margin: 50px auto 20px;
     width: 50px;
-  }
-  
-  >video {
-    width: 100vw;
-    margin: auto;
-  }
-
-  @media (max-width: 900px) {
-    padding-top: 5vh;
-    overflow: hidden;
-    >video {
-      margin-bottom: 5vh;
-      transform: scale(1.2);
-    }
-  }
-
-  @media (max-width: 700px) {
-    padding-top: 15vh;
-    overflow: hidden;
-    >video {
-      margin-bottom: 10vh;
-      transform: scale(2);
-    }
   }
 `;
 
