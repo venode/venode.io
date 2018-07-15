@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="14px" viewBox="0 0 112 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="80.9858521%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#9D4ABE" offset="0%"></stop>
+            <stop stop-color="#9055C4" offset="3%"></stop>
+            <stop stop-color="#6B74D6" offset="15%"></stop>
+            <stop stop-color="#4C8FE5" offset="26%"></stop>
+            <stop stop-color="#34A3F0" offset="39%"></stop>
+            <stop stop-color="#22B2F9" offset="52%"></stop>
+            <stop stop-color="#18BAFD" offset="66%"></stop>
+            <stop stop-color="#15BDFF" offset="83%"></stop>
+            <stop stop-color="#28BAD5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M7,0 C10.8659932,-7.10171439e-16 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 4.73447626e-16,10.8659932 0,7 C-4.73447626e-16,3.13400675 3.13400675,7.10171439e-16 7,0 Z M39.6666667,0 C43.5326599,-7.10171439e-16 46.6666667,3.13400675 46.6666667,7 C46.6666667,10.8659932 43.5326599,14 39.6666667,14 C35.8006734,14 32.6666667,10.8659932 32.6666667,7 C32.6666667,3.13400675 35.8006734,7.10171439e-16 39.6666667,0 Z M72.3333333,0 C76.1993266,-7.10171439e-16 79.3333333,3.13400675 79.3333333,7 C79.3333333,10.8659932 76.1993266,14 72.3333333,14 C68.4673401,14 65.3333333,10.8659932 65.3333333,7 C65.3333333,3.13400675 68.4673401,7.10171439e-16 72.3333333,0 Z M105,0 C108.865993,-7.10171439e-16 112,3.13400675 112,7 C112,10.8659932 108.865993,14 105,14 C101.134007,14 98,10.8659932 98,7 C98,3.13400675 101.134007,7.10171439e-16 105,0 Z" id="Combined-Shape-Copy" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -8,9 +8,9 @@ export default class Jumbotron extends Component {
     return (
       <div>
         <Logo />
-        <GoodParticlesContainer>
+        <VenodeParticlesContainer>
           <Particles params={params_fast}/>
-        </GoodParticlesContainer>
+        </VenodeParticlesContainer>
         <GeneralParticlesContainer>
           <Particles params={params_slow}/>
         </GeneralParticlesContainer>
@@ -19,7 +19,7 @@ export default class Jumbotron extends Component {
   }
 }
 
-const GoodParticlesContainer = styled.div`
+const VenodeParticlesContainer = styled.div`
   position: absolute;
   background: white;
   top: 0px;

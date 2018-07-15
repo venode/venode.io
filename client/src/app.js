@@ -6,7 +6,8 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import reduxThunk from 'redux-thunk';
 
 import App from './components/app';
-import Home from './components/home';
+import Intro from './components/intro';
+import Charging from './components/charging';
 // import Public from './components/public';
 // import Account from './components/account';
 // import Signin from './components/auth/signin';
@@ -31,7 +32,8 @@ ReactDOM.render(
     <HashRouter hashType="noslash">
       <App>
         <Switch>
-          <Route exact path="/" component= {Home} />
+          <Route exact path="/" component= {Charging} />
+          <Route exact path="/intro" component= {Intro} />
           {/* <Route path="/public" component= {Public} />
           <Route path="/account" component= {RequireAuth(Account)} />
           <Route path="/signin" component= {Signin} />
