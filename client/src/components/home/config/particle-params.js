@@ -29,9 +29,9 @@ export const params_fast = {
     },
     'move': {
       'enable': true,
-      'speed': 20,
+      'speed': 30,
       'direction': 'top',
-      'random': false,
+      'random': true,
       'straight': true,
       'out_mode': 'out',
       'bounce': false,
@@ -74,7 +74,7 @@ export const params_slow = {
       'speed': 5,
       'direction': 'top',
       'random': true,
-      'straight': true,
+      'straight': false,
       'out_mode': 'out',
       'bounce': false,
     }
