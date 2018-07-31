@@ -136,7 +136,7 @@ const connectionSnippet = (newtork = 'main') => {
   return `
   import { thorify } from 'thorify';
   import Web3 from 'web3';
-  const web3 = thorify(new Web3(), "https://${newtork}.venode.io");
+  const web3 = thorify(new Web3(), "http://${newtork}.venode.io");
   // That's it, all thorify features work as you expect
   // No hassle to connect to the thor
   `
