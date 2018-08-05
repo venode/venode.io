@@ -136,7 +136,7 @@ const connectionSnippet = (newtork = 'main') => {
   return `
   import { thorify } from 'thorify';
   import Web3 from 'web3';
-  const web3 = thorify(new Web3(), "https://${newtork}.venode.io");
+  const web3 = thorify(new Web3(), "http://${newtork}.venode.io");
   // That's it, all thorify features work as you expect
   // No hassle to connect to the thor
   `
@@ -184,7 +184,7 @@ const Description = styled.div`
 `;
 
 const Introduction = styled.div`
-  color: white;
+  color: black;
   font-size: 1.5rem;
   max-width: 800px;
   padding: auto 20px;
@@ -192,16 +192,19 @@ const Introduction = styled.div`
 `;
 
 const Logo = styled.img.attrs({
-  src: '../../assets/logo_white_circle.svg'
+  src: '../../assets/logo_color.svg'
 })`
-  width: 150px;
-  margin: 50px auto 20px;
+  width: 350px;
+  margin: 100px auto;
+  @media (max-width: 800px) {
+    width: 250px;
+  }
 `;
 
 const Container = styled.div`
-  background: black;
+  background: white;
   text-align: center;
-  color: white;
+  color: black;
   max-width: 900px;
   margin: auto;
 `;
@@ -213,12 +216,13 @@ const Block = styled.div`
 `;
 
 const Tag = styled.div`
-  border: 1.5px solid rgba(255,255,255,0.2);
+  border: 1.5px solid rgba(0,0,0,0.2);
   padding: 5px 30px;
   display: inline-block;
   margin: 10px auto 20px;
   letter-spacing: 1px;
   user-select: none;
-  color: rgba(255,255,255,0.8);
+  color: rgba(0,0,0,0.8);
 `;
+
 export default Charging;
